@@ -22,7 +22,7 @@ class FadeAnimation extends StatelessWidget {
       builder: (context, value, child) => Opacity(
         opacity: value.get("opacity"),
         child: Transform.translate(
-          // offset: Offset(0, value.get("transity")),
+          offset: Offset(0, value.get("transity")),
           child: child,
         ),
       ),
